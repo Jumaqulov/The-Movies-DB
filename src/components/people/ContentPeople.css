@@ -1,0 +1,4 @@
+.content-people-card-component {
+    margin: 10px 20px;
+    width: calc(100% / 5 - 40px);
+}

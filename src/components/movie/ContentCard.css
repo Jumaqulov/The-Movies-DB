@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0; 
+}
+.content-card-component {
+    margin: 10px;
+    width: calc(100% / 5 - 20px)!important; 
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card {
+    border: none;
+}

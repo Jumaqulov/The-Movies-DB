@@ -1,0 +1,24 @@
+import React from 'react'
+import { contentUrl } from '../../repositories/repository'
+import './ContentPeople.css'
+import { Link } from 'react-router-dom'
+
+export default function ContentCardPeople(props) {
+  console.log(props.personList.id);
+  return (
+    <>
+      {
+        props.personList.map((item , index) => {
+          return(
+            <div key={index} className="content-people-card-component" >
+              <div className='card'>
+                <img src={contentUrl + item.profile_path} alt={item.name} />
+                <Link to={`/person/${item.id}`} className='text-decoration-none text-black'>{item.name}</Link>
+              </div>
+            </div>
+          )
+        })
+      }
+    </>
+  )
+}
