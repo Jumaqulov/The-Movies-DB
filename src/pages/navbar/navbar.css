@@ -66,3 +66,17 @@
 .search-icon-color {
     color: #01b4e4;
 }
+
+.acc {
+    transition: 0.5s;
+}
+
+.acc:hover {
+    transition: 0.5s;
+    transform: scale(1.5);
+}
+
+.acc:hover i {
+    transition: 0.5s;
+    color: red;
+}

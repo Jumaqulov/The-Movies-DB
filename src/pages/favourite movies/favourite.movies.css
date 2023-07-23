@@ -1,0 +1,40 @@
+.rows {
+    height: 200px;
+}
+
+/* .watch-list {
+    width: 100%;
+    height: 100vh;
+} */
+
+.favorite-items {
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+    padding: 10px 15px;
+}
+
+.favourite-movies-img {
+    object-fit: cover;
+    width: 133.32px;
+    height: 200px;
+}
+
+.remove-btn {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.remove-btn span {
+    font-size: 25px;
+}
+
+.remove-btn:hover span i {
+    color: rgb(255, 0, 0);
+}
+
+.movie-overview {
+    overflow-y: scroll;
+    height: 60px;
+}

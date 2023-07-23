@@ -21,3 +21,17 @@
     bottom: 0;
     z-index: 5;
 }
+
+.kol-8 {
+    position: relative;
+}
+
+.bar {
+    margin: 130px 0px;
+}
+
+.rate {
+    width: 10%;
+    position: absolute;
+    top: 60px;
+}

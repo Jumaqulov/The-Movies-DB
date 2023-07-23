@@ -60,9 +60,9 @@ export default function Navbar() {
                                 <i class="bi bi-bell-fill right-side-items-icon"></i>
                             </a>
                         </li>
-                        <li className='right-side-items'>
-                            <a href="">
-                                <i class="bi bi-person right-side-items-icon"></i>
+                        <li className='right-side-items acc'>
+                            <a href={'/added-movies-list'}>
+                                <i class="bi bi-person right-side-items-icon accaount"></i>
                             </a>
                         </li>
                         <li className='right-side-items'>

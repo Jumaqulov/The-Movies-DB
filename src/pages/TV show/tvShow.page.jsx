@@ -5,7 +5,7 @@ import tvShow from '../../repositories/tvShow'
 import TvFilterComponent from '../../components/tv_shows/tvFilterComponent'
 import TvContentList from '../../components/tv_shows/tvContentList'
 
-export default function   TvShow() {
+export default function TvShow() {
   const {title} = useParams()
   const [showsList, setShowsList] = useState([])
   const [loading, setloading] = useState(false)

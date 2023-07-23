@@ -12,7 +12,12 @@ export default function PeopleInfo(props) {
         {
             <div className='row'>
                 <div className="col-md-3">
-                    <img className='w-100 rounded-2' src={contentUrl + item.profile_path} alt={item.name} />
+                    {
+                        (item.profile_path)?
+                            <img className='w-100 rounded-2' src={contentUrl + item.profile_path} alt={item.name} />
+                        :
+                            <img className='w-100 rounded-2' src={'https://img.freepik.com/free-icon/user_318-804790.jpg'} alt={item.name} /> 
+                    }
                 </div>
                 <div className="col-md-8">
                     <h2>{item.name}</h2>

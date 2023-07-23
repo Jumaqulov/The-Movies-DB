@@ -2,21 +2,37 @@ import React, { useEffect ,useState } from 'react'
 import { useParams } from 'react-router-dom'
 import popularTvID from '../../repositories/popularTvID'
 import WhatsPopularList from '../../components/whats popular component/whatsPopularList'
+import { AxiosError } from 'axios'
 
 export default function WhatsPopular() {
     const [loading, setloading] = useState(false)
     const {id} = useParams()
     const [popularTvId, setPopularTvId] = useState([])
 
-    async function getPopularTv() {
+
+    
+    async function getWhatsPopularTheatr() {
       setloading(true)
       const currenMovie = await popularTvID.getWhatsPopularMovieId(id)
-      setPopularTvId(currenMovie)
+      if(currenMovie == AxiosError) {
+        async function getWhatsPopularMovieId() {
+          setloading(true)
+          const currenMovieID = await popularTvID.getWhatsPopularTheatr(id)
+          console.log('salom',currenMovieID);
+          setPopularTvId(currenMovieID)
+          setloading(false)
+        }
+        getWhatsPopularMovieId()
+      } else {
+        setPopularTvId(currenMovie)
+      }
       setloading(false)
     }
-    console.log("popularTvId => ", popularTvId);
+    
+    // console.log("popularTvId => ", popularTvId)
     useEffect(()=>{
-        getPopularTv()
+      getWhatsPopularTheatr()
+      // getWhatsPopularMovieId()
     },[id])
 
   return (
@@ -29,7 +45,7 @@ export default function WhatsPopular() {
               </div>
             </div>
             :
-            <WhatsPopularList popular={popularTvId} />
+            <WhatsPopularList popularTvId={popularTvId} />
         }
     </div>
   )

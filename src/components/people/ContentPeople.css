@@ -2,3 +2,8 @@
     margin: 10px 20px;
     width: calc(100% / 5 - 40px);
 }
+
+.no-person-img {
+    height: 328.8px;
+    width: 100%;
+}

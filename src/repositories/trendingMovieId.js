@@ -13,7 +13,8 @@ class TrendingMovieId {
                 return ress.data
             })
             .catch(err => {
-                console.log(err);
+                // console.log(err);
+                return err
             })
         return trendingMovie
     }

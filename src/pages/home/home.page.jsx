@@ -11,6 +11,9 @@ import trendingMovies from '../../repositories/trendingMovies';
 import popularTv from '../../repositories/popularTv';
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
+import { useSelector, useDispatch } from 'react-redux'
+import { addToList } from '../../store/slices/counterSlice';
+import { addTvList } from '../../store/slices/counterTvSlices';
 const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -34,7 +37,8 @@ const responsive = {
 
 
 export default function HomePage() {
-     
+    const count = useSelector((state) => state.counter)
+    const dispatch = useDispatch()
     const [trending , setTrending] = useState([])
     const [type , setType] = useState('day')
     const [types, setTypes] = useState('tv')
@@ -57,7 +61,6 @@ export default function HomePage() {
         setWhtPopular(currentMovie)  
         setloading(false)
     }
-
     function searchMovie() {
         navigate(`search/${search}`)
     }
@@ -65,7 +68,7 @@ export default function HomePage() {
     function showlist(id) {
         setCurrendDropMovie(id)
     }
-    // console.log(search);
+    console.log(whtPopular);
     useEffect(()=> {
         getTrendingMovie()
         getWhatpopular()
@@ -173,7 +176,7 @@ export default function HomePage() {
                                 {
                                     currendDropMovie === item.id && <ul className='bg-light list-unstyled adding-list'>
                                         <li>
-                                            <button className='btn btn-light w-100'>
+                                            <button className='btn btn-light w-100' onClick={() => dispatch(addToList(item.id))}>
                                                 <div className="row">
                                                     <div className="col-2">
                                                         <i class="bi bi-card-list"></i>
@@ -185,7 +188,7 @@ export default function HomePage() {
                                             </button>
                                         </li>
                                         <li>
-                                            <button className='btn btn-light w-100'>
+                                            <button className='btn btn-light w-100' onClick={() => dispatch(addToList(item.id))}>
                                                 <div className="row">
                                                     <div className="col-2">
                                                         <i class="bi bi-suit-heart-fill"></i>
@@ -197,7 +200,7 @@ export default function HomePage() {
                                             </button>
                                         </li>
                                         <li>
-                                            <button className='btn btn-light w-100'>
+                                            <button className='btn btn-light w-100' onClick={() => dispatch(addToList(item.id))}>
                                                 <div className="row">
                                                     <div className="col-2">
                                                         <i class="bi bi-bookmark-fill"></i>
@@ -295,7 +298,7 @@ export default function HomePage() {
                                 {
                                     currendDropMovie === item.id && <ul className='bg-light list-unstyled adding-list'>
                                         <li>
-                                            <button className='btn btn-light w-100'>
+                                            <button className='btn btn-light w-100' onClick={() => dispatch(addTvList(item.id))}>
                                                 <div className="row">
                                                     <div className="col-2">
                                                         <i class="bi bi-card-list"></i>
@@ -307,7 +310,7 @@ export default function HomePage() {
                                             </button>
                                         </li>
                                         <li>
-                                            <button className='btn btn-light w-100'>
+                                            <button className='btn btn-light w-100' onClick={() => dispatch(addTvList(item.id))}>
                                                 <div className="row">
                                                     <div className="col-2">
                                                         <i class="bi bi-suit-heart-fill"></i>
@@ -319,7 +322,7 @@ export default function HomePage() {
                                             </button>
                                         </li>
                                         <li>
-                                            <button className='btn btn-light w-100'>
+                                            <button className='btn btn-light w-100' onClick={() => dispatch(addTvList(item.id))}>
                                                 <div className="row">
                                                     <div className="col-2">
                                                         <i class="bi bi-bookmark-fill"></i>

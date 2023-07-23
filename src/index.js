@@ -14,10 +14,14 @@ import WhatsPopular from './pages/whats popular/whatsPopular';
 import TvMovieInfo from './pages/tv movie id/tv.movie.info';
 import AboutPeople from './pages/about people/about.people';
 import SearchingMovie from './pages/search/search.movie';
+import { Provider } from 'react-redux'
+import store from './store/store';
+import FavouriteMovies from './pages/favourite movies/favourite.movies';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+    <Provider store={store}>
     <BrowserRouter>
         <Routes>
             <Route path='/' element={<App />}>
@@ -31,8 +35,10 @@ root.render(
                 <Route path='/tv-info/:id' element={<TvMovieInfo/>} />
                 <Route path='/person/:id' element={<AboutPeople/>} />
                 <Route path='/search/:title' element={<SearchingMovie/>} />
+                <Route path='/added-movies-list' element={<FavouriteMovies/>} />
                 <Route path={'*'} element={<NotFoundPage/>} />
             </Route>
         </Routes>
     </BrowserRouter>
+    </Provider>
 )
