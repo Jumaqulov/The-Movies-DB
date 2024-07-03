@@ -1,6 +1,5 @@
 import React from 'react'
 import { contentUrl } from '../../repositories/repository'
-import './ContentCard.css'
 import { Link } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
 

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { removeItem } from '../../store/slices/counterSlice'
 import { barearToken, contentUrl } from '../../repositories/repository'
-import './favourite.movies.css'
 import { useDispatch, useSelector } from 'react-redux'
 import axios from 'axios';
 import { removeTvItem } from '../../store/slices/counterTvSlices'

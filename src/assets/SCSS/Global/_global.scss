@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 100px;
+}
+
+.not-found-section {
+    padding: 50px 0px 100px;
+}
+
+.found-404-link {
+    color: #01b4e4;
+}

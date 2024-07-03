@@ -1,6 +1,5 @@
 import React from 'react'
 import { contentUrl } from '../../repositories/repository';
-import './searchComponent.css'
 
 export default function SearchComponent(props) {
     console.log(props.searchedList.results);

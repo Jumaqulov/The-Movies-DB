@@ -4,7 +4,6 @@ import { useParams } from 'react-router-dom'
 import movie from '../../repositories/movie'
 import FilterComponent from '../../components/movie/FilterComponent'
 import ContentListComponent from '../../components/movie/ContentListComponent'
-import './moviePage.css'
 
 export default function MoviePage() {
     const {title} = useParams()

@@ -1,6 +1,5 @@
 import React from 'react'
 import { contentUrl } from '../../repositories/repository'
-import './ContentPeople.css'
 import { Link } from 'react-router-dom'
 
 export default function ContentCardPeople(props) {

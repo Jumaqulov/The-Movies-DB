@@ -1,5 +1,4 @@
 import React from 'react'
-import './navbar.css'
 import { nav_link } from './navbar.items'
 import { Link } from 'react-router-dom';
 

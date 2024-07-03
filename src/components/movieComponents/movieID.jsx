@@ -2,7 +2,6 @@ import React from 'react'
 import { contentUrl } from '../../repositories/repository'
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
-import './movieID.css'
 
 export default function MovieID(props) {
   const items = props.movieId
