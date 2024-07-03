@@ -2,7 +2,6 @@ import React from 'react'
 import { contentUrl } from '../../repositories/repository';
 
 export default function SearchComponent(props) {
-    console.log(props.searchedList.results);
 
   return (
     <div>

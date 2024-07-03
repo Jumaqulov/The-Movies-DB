@@ -15,7 +15,6 @@ export default function PeoplePage() {
         setPersonList(currentPerson)
         setloading(false)
     }
-    console.log(personList);
     useEffect(() => {
         getPersonByName()
     },[])

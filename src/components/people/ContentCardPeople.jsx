@@ -3,7 +3,6 @@ import { contentUrl } from '../../repositories/repository'
 import { Link } from 'react-router-dom'
 
 export default function ContentCardPeople(props) {
-  console.log(props.personList.id);
   return (
     <>
       {

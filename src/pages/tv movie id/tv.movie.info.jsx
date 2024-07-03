@@ -15,7 +15,6 @@ export default function TvMovieInfo() {
         setTvMovie(currentTvMovie)
         setloading(false)
     }
-    console.log("tvMovie =>", tvMovie)
     useEffect(()=>{
         getTvMovie(id)
     },[id])

@@ -6,7 +6,7 @@ import "react-circular-progressbar/dist/styles.css";
 export default function MovieID(props) {
   const items = props.movieId
   const genres = items.genres
-  console.log(genres);
+
   return (
     <div className=''>
       {
@@ -23,15 +23,13 @@ export default function MovieID(props) {
               <div className="col-8 kol-8">
                 <h3 className='text-white mb-4'>{items.original_title}</h3>
                 <ul>
-                  {/* {
-                    // console.log("genres =>", genres)
+                  {
                     genres.map((gen, id)=> {
                       return(
                         <li key={id}>{gen.name}</li>
-                        // <></>
                       )
                     })
-                  } */}
+                  }
                 </ul>
                 <div className="bar w-100">
                   <div className="rate">

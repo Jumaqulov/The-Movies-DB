@@ -18,7 +18,6 @@ export default function WhatsPopular() {
         async function getWhatsPopularMovieId() {
           setloading(true)
           const currenMovieID = await popularTvID.getWhatsPopularTheatr(id)
-          console.log('salom',currenMovieID);
           setPopularTvId(currenMovieID)
           setloading(false)
         }

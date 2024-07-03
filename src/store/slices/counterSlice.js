@@ -9,7 +9,6 @@ export const counterSlice = createSlice({
       localStorage.setItem('counter', JSON.stringify(state))
     },
     removeItem: (state, action) =>{
-      // console.log("action", action.payload);
       const resultOfRemove = state.filter((item) => item !== action.payload)
       localStorage.setItem('counter', JSON.stringify(resultOfRemove))
       return resultOfRemove

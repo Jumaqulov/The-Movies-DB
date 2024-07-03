@@ -9,7 +9,6 @@ class Person {
             }
         })
             .then(ress => {
-                // console.log(ress.data);
                 return ress.data.results
             })
             .catch(err => {

@@ -18,7 +18,6 @@ export default function MoviePage() {
     }
 
 
-    console.log(movieList);
     useEffect(() =>{
         getMoviesByName(title)
     },[title])

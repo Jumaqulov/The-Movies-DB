@@ -15,7 +15,6 @@ export default function MovieId() {
       setMovieId(currentMovieId)
       setloading(false)
     }
-    console.log(movieId);
 
     useEffect(()=> {
         getMovieId(id)

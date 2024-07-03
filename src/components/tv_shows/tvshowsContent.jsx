@@ -3,7 +3,6 @@ import { contentUrl } from '../../repositories/repository'
 import { Link } from 'react-router-dom'
 
 export default function TvshowsContent(props) {
-    // console.log(props);
   return (
     props.tvList.map((item, index)=> {
         return(

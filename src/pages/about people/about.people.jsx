@@ -15,7 +15,6 @@ export default function AboutPeople() {
         setPersonInfo(currentPersonIno)
         setloading(false)
     }
-    console.log("personInfo =>", personInfo)
     useEffect(() => {
         getPersonInfo(id)
     },[id])

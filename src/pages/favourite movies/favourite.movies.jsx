@@ -15,7 +15,6 @@ const FavouriteMovies = () => {
     
 
 
-  console.log("render2 => ", render_2);
 
   useEffect(() => {
 
@@ -88,7 +87,7 @@ const FavouriteMovies = () => {
                             <p className='mt-1 movie-overview'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, at sed excepturi qui unde dolorem, eos similique alias laborum recusandae, rem est. Consequatur consequuntur totam quod at. Laudantium cumque delectus error aperiam! Nemo repellendus modi molestiae illum error maiores corporis cupiditate impedit possimus autem alias molestias, officia itaque quaerat iste velit similique ea placeat totam aliquid. Asperiores odio fugiat itaque minus delectus et atque, quis voluptatibus explicabo libero veritatis iure quae voluptates necessitatibus quibusdam dolorum natus alias recusandae rem a maxime veniam enim. Placeat libero praesentium voluptatibus omnis nemo totam nesciunt doloremque vero dicta optio eaque eveniet nam, explicabo eius.</p>  
                         }
                         <button onClick={() => dispatch(removeItem(item.id))} className='remove-btn'>
-                          <span className='me-2'><i class="bi bi-x-circle"></i></span>
+                          <span className='me-2'><i className="bi bi-x-circle"></i></span>
                           remove
                         </button>  
                     </div>
@@ -125,7 +124,7 @@ const FavouriteMovies = () => {
                             <p className='mt-1 movie-overview'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, at sed excepturi qui unde dolorem, eos similique alias laborum recusandae, rem est. Consequatur consequuntur totam quod at. Laudantium cumque delectus error aperiam! Nemo repellendus modi molestiae illum error maiores corporis cupiditate impedit possimus autem alias molestias, officia itaque quaerat iste velit similique ea placeat totam aliquid. Asperiores odio fugiat itaque minus delectus et atque, quis voluptatibus explicabo libero veritatis iure quae voluptates necessitatibus quibusdam dolorum natus alias recusandae rem a maxime veniam enim. Placeat libero praesentium voluptatibus omnis nemo totam nesciunt doloremque vero dicta optio eaque eveniet nam, explicabo eius.</p>  
                         }
                         <button onClick={() => dispatch(removeTvItem(item.id))} className='remove-btn'>
-                          <span className='me-2'><i class="bi bi-x-circle"></i></span>
+                          <span className='me-2'><i className="bi bi-x-circle"></i></span>
                           remove
                         </button>  
                     </div>

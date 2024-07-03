@@ -3,7 +3,7 @@ import { contentUrl } from '../../repositories/repository'
 
 export default function WhatsPopular(props) {
   const items = props.popularTvId
-  // console.log("salom", props.popularTvId);
+  console.log("salom", props.popularTvId);
   return (
     <div className=''>
       {

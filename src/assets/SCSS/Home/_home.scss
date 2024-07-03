@@ -1,0 +1,138 @@
+.content-section {
+    /* background-image: url('https://image.tmdb.org/t/p/w1920_and_h600_multi_faces_filter(duotone,00192f,00baff)/34OGjFEbHj0E3lE2w0iTUVq0CBz.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 0px;
+}
+
+.content {
+    padding: 30px 40px;
+}
+
+.content-title {
+    margin-bottom: 40px;
+}
+
+.content-text {
+    color: white;
+    font-weight: 700;
+}
+
+.search {
+    position: relative;
+}
+
+.search-input {
+    width: 100%;
+    border-radius: 30px;
+    padding: 10px 20px;
+    /* position: absolute; */
+    /* z-index: 2; */
+    border: none;
+}
+
+.search-button {
+    /* width: 10%; */
+    border: none;
+    padding: 10px 26px;
+    border-radius: 30px;
+    position: absolute;
+    z-index: 3;
+    right: 0;
+    background: linear-gradient(95deg, #19d0b2, #05b8dd);
+    color: white;
+    font-weight: 700;
+}
+
+.search-button:hover {
+    color: black;
+}
+
+.weekly-content {
+    padding: 30px 0px 0px;
+}
+
+.selector {
+    border: 1px solid black;
+    border-radius: 30px;
+    /* padding: 0px 10px; */
+}
+
+.today {
+    border: none;
+    border-radius: 30px;
+    background-color: #032541;
+    /* text-decoration-color: hwb(hue red green); */
+    color: white;
+    padding: 0px 10px;
+}
+
+.weekly-items-card {
+    // background-image: url('../../Svg/weekly-content-backround.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel-items {
+    background: transparent;
+    background: rgba(255, 0, 0, 0);
+    width: 150px !important;
+}
+
+.swiper-card {
+    width: 200px;
+    height: 350px;
+    position: relative;
+}
+
+.carousel-item-title {
+    color: black;
+    font-weight: 700;
+    width: 150px;
+}
+
+.span-btn {
+    border: 1px solid #032541;
+    border-radius: 30px;
+}
+
+.trending-btn {
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: white;
+}
+
+.active_btn {
+    background-color: #032541;
+}
+
+.trending-btn-text {
+    padding: 4px 20px;
+    margin: 0;
+    background: linear-gradient(60deg, #b1fbcb, #08daa6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.swiper-card {
+    position: relative;
+}
+
+.swiper-card-icon {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+}
+
+.adding-list {
+    width: 150px;
+    padding: 0px;
+}
+
+.circle {
+    width: 20%;
+    position: absolute;
+    top: 180px;
+}

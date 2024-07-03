@@ -14,7 +14,6 @@ export default function SearchingMovie() {
     setSearchedList(currentSearched)
     setLoading(false)
   }
-  console.log(searchedList);
 
   useEffect(()=>{
     getSearchedMovies(title)
