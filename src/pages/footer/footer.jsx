@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-// const footerIcon = 'tmdb icon-2.svg'
+import footerLogo from '../../assets/Svg/footerLogo.svg'
 
 export default function Footer()   {
   return (
@@ -8,7 +8,7 @@ export default function Footer()   {
       <div className="container px-5">
         <div className="footer-box">
           <div className="join-footer">
-            <img className='footer-icon' src={'https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg'} alt="TMDB footer-icon" />
+            <img className='footer-icon' src={footerLogo} alt="TMDB footer-icon" />
             <button className='footer-btn'>JOIN THE COMUNITY</button>
           </div>
             <div>

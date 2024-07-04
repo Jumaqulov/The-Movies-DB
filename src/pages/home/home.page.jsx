@@ -8,7 +8,6 @@ import 'react-multi-carousel/lib/styles.css';
 import trendingMovies from '../../repositories/trendingMovies';
 import popularTv from '../../repositories/popularTv';
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
-import "react-circular-progressbar/dist/styles.css";
 import { useSelector, useDispatch } from 'react-redux'
 import { addToList } from '../../store/slices/counterSlice';
 import { addTvList } from '../../store/slices/counterTvSlices';
@@ -103,7 +102,7 @@ export default function HomePage() {
                     </span>
                 </div>
                 <div className="weekly-items-card px-4 py-2" style={{ backgroundImage: `url(${backgroundImg})` }}>
-                    <Carousel responsive={responsive} arrows={false} showDots={false} swipeable={true} className='carousel'>
+                    <Carousel responsive={responsive} arrows={false} showDots={true} swipeable={true} className='carousel'>
                         {
                             (loading) ?
                                 <div className="spinner">
@@ -116,7 +115,7 @@ export default function HomePage() {
                                     return (
                                         <div key={index} className="swiper-card">
                                             <div className="swiper-card-items">
-                                                <Link className='text-decoration-none link-carousel' to={`/homemovies/${item.id}`}>
+                                                <Link className='text-decoration-none link-carousel' to={`/home-movies/${item.id}`}>
                                                     <img className='carousel-items' src={contentUrl + item.poster_path} alt={item.title} />
                                                     <p className='carousel-item-title'>{item.original_title || item.name}</p>
                                                 </Link>
@@ -234,12 +233,12 @@ export default function HomePage() {
                     </span>
                 </div>
                 <div className="whats-popular-movie-card mt-2">
-                    <Carousel responsive={responsive} arrows={false} showDots={false} swipeable={true} className='carousel'>
+                    <Carousel responsive={responsive} arrows={false} showDots={true} swipeable={true} className='carousel'>
                         {
                             whtPopular.map((item, index) => {
                                 return (
                                     <div key={index} className="swiper-card">
-                                        <Link className='text-decoration-none link-carousel' to={`/whatspopular/${item.id}`}>
+                                        <Link className='text-decoration-none link-carousel' to={`/whats-popular/${item.id}`}>
                                             <img className='carousel-items' src={contentUrl + item.poster_path} alt={item.title} />
                                             <p className='carousel-item-title'>{item.original_title || item.name}</p>
                                         </Link>

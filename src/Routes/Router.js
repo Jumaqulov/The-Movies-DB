@@ -1,4 +1,3 @@
-import WhatsPopular from "../components/whats popular component/whatsPopular"
 import TvShow from "../pages/TV show/tvShow.page"
 import AboutPeople from "../pages/about people/about.people"
 import FavouriteMovies from "../pages/favourite movies/favourite.movies"
@@ -14,8 +13,8 @@ const router = [
   { path: `${process.env.PUBLIC_URL}/movie/:title`, Component: <MoviePage /> },
   { path: `${process.env.PUBLIC_URL}/tv/:title`, Component: <TvShow /> },
   { path: `${process.env.PUBLIC_URL}/person`, Component: <PeoplePage /> },
-  { path: `${process.env.PUBLIC_URL}/homemovies/:id`, Component: <MovieId /> },
-  { path: `${process.env.PUBLIC_URL}/whatspopular/:id`, Component: <WhatsPopular /> },
+  { path: `${process.env.PUBLIC_URL}/home-movies/:id`, Component: <MovieId /> },
+  { path: `${process.env.PUBLIC_URL}/whats-popular/:id`, Component: <MovieId /> },
   { path: `${process.env.PUBLIC_URL}/movie-info/:id`, Component: <MovieId /> },
   { path: `${process.env.PUBLIC_URL}/tv-info/:id`, Component: <TvMovieInfo /> },
   { path: `${process.env.PUBLIC_URL}/person/:id`, Component: <AboutPeople /> },

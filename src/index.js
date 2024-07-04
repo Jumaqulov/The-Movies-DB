@@ -7,8 +7,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import NotFoundPage from './pages/Not found/not.found.page';
 import { Provider } from 'react-redux'
 import store from './store/store';
-import './index.css'
+import './index.scss'
 import router from './Routes/Router';
+import "react-circular-progressbar/dist/styles.css";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

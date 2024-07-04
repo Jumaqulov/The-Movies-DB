@@ -1,16 +1,13 @@
 .bg-footer {
     background-color: #032541;
     font-family: "Source Sanse Pro", Arial, sans-serif;
-    position: absolute;
-    /* bottom: 0px; */
-    right: 0;
-    left: 0;
+    position: relative;
+    bottom: 0;
     z-index: 4;
 }
 
 .footer-box {
     display: flex;
-    /* justify-content: center; */
     padding: 80px 0px;
     gap: 40px;
 }

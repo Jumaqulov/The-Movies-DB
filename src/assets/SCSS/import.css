@@ -74,7 +74,20 @@
 .rate {
   width: 10%;
   position: absolute;
-  top: 60px;
+  top: 80px;
+}
+
+.movie-genres {
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.movie-genres li a {
+  font-size: 16px;
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
 .search-detailes {

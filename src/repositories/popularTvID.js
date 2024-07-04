@@ -1,4 +1,5 @@
 import repository, { baseUrl, barearToken } from "./repository";
+
 class WhatsPopularId {
   async getWhatsPopularMovieId(id) {
     const endPoint = `tv/${id}`
