@@ -1,7 +1,7 @@
 import TvShow from "../pages/TV show/tvShow.page"
 import AboutPeople from "../pages/about people/about.people"
 import FavouriteMovies from "../pages/favourite movies/favourite.movies"
-import HomePage from "../pages/home/home.page"
+import HomePage from "../pages/home/HomePage"
 import MovieId from "../pages/movieID/movie.id"
 import MoviePage from "../pages/moviePages/movie.page"
 import PeoplePage from "../pages/people/people.page"
