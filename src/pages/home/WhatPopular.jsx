@@ -11,15 +11,19 @@ export default function WhatPopular({ loading1, whtPopular }) {
     const dispatch = useDispatch();
     const [currendDropMovie, setCurrendDropMovie] = useState(null);
 
-    function showlist(id) {
-        setCurrendDropMovie(id);
+    function toggleList(id) {
+        if (currendDropMovie === id) {
+            setCurrendDropMovie(null);
+        } else {
+            setCurrendDropMovie(id);
+        }
     }
 
     if (loading1) {
         return (
             <div className="whats-popular-movie-card mt-2">
                 <Carousel responsive={responsive} arrows={false} showDots={true} swipeable={true} className='carousel'>
-                    {[...Array(5)].map((_, index) => (
+                    {[...Array(6)].map((_, index) => (
                         <div key={index} className="swiper-card loading-card">
                             <div className="swiper-card-items loading-card-content">
                                 <div className="loading-image"></div>
@@ -76,7 +80,7 @@ export default function WhatPopular({ loading1, whtPopular }) {
                                 </div>
                                 <p>{item.release_date || item.first_air_date}</p>
                                 <div className="swiper-card-icon">
-                                    <button className='btn btn-light' onClick={() => showlist(item.id)}><i className="bi bi-three-dots"></i></button>
+                                    <button className='btn btn-light' onClick={() => toggleList(item.id)}><i className="bi bi-three-dots"></i></button>
                                     {currendDropMovie === item.id && <ul className='bg-light list-unstyled adding-list'>
                                         <li>
                                             <button className='btn btn-light w-100' onClick={() => dispatch(addTvList(item.id))}>

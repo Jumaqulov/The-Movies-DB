@@ -12,15 +12,19 @@ export default function TrendingMovies({ trending, loading }) {
     const dispatch = useDispatch();
     const [currendDropMovie, setCurrendDropMovie] = useState(null);
 
-    function showlist(id) {
-        setCurrendDropMovie(id);
+    function toggleList(id) {
+        if (currendDropMovie === id) {
+            setCurrendDropMovie(null);
+        } else {
+            setCurrendDropMovie(id);
+        }
     }
 
     return (
         <div className="weekly-items-card px-4 py-2" style={{ backgroundImage: `url(${backgroundImg})` }}>
             <Carousel responsive={responsive} arrows={false} showDots={true} swipeable={true} className='carousel'>
                 {loading ? (
-                    [...Array(5)].map((_, index) => (
+                    [...Array(6)].map((_, index) => (
                         <div key={index} className="swiper-card loading-card">
                             <div className="swiper-card-items loading-card-content">
                                 <div className="loading-image"></div>
@@ -63,7 +67,7 @@ export default function TrendingMovies({ trending, loading }) {
                                 <p>{item.release_date || item.first_air_date}</p>
                             </div>
                             <div className="swiper-card-icon">
-                                <button className='btn btn-outline-light' onClick={() => showlist(item.id)}>
+                                <button className='btn btn-outline-light' onClick={() => toggleList(item.id)}>
                                     <i className="bi bi-three-dots"></i>
                                 </button>
                                 {currendDropMovie === item.id && (

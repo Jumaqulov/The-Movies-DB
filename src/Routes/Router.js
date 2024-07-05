@@ -18,7 +18,7 @@ const router = [
   { path: `${process.env.PUBLIC_URL}/movie-info/:id`, Component: <MovieId /> },
   { path: `${process.env.PUBLIC_URL}/tv-info/:id`, Component: <TvMovieInfo /> },
   { path: `${process.env.PUBLIC_URL}/person/:id`, Component: <AboutPeople /> },
-  { path: `${process.env.PUBLIC_URL}/search/:title`, Component: <SearchingMovie /> },
+  { path: `${process.env.PUBLIC_URL}/search/multi`, Component: <SearchingMovie /> },
   { path: `${process.env.PUBLIC_URL}/added-movies-list`, Component: <FavouriteMovies /> },
 
 ]

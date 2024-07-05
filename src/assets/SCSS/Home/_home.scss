@@ -53,20 +53,17 @@
 .selector {
     border: 1px solid black;
     border-radius: 30px;
-    /* padding: 0px 10px; */
 }
 
 .today {
     border: none;
     border-radius: 30px;
     background-color: #032541;
-    /* text-decoration-color: hwb(hue red green); */
     color: white;
     padding: 0px 10px;
 }
 
 .weekly-items-card {
-    // background-image: url('../../Svg/weekly-content-backround.svg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -75,18 +72,23 @@
     background: transparent;
     background: rgba(255, 0, 0, 0);
     width: 150px !important;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .swiper-card {
     width: 200px;
     height: 350px;
     position: relative;
+    margin: 0 5px 0;
 }
 
 .carousel-item-title {
     color: black;
     font-weight: 700;
     width: 150px;
+    margin: 0;
 }
 
 .span-btn {
@@ -112,10 +114,6 @@
     background: linear-gradient(60deg, #b1fbcb, #08daa6);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-.swiper-card {
-    position: relative;
 }
 
 .swiper-card-icon {

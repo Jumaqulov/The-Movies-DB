@@ -8,7 +8,7 @@ export default function Media() {
     const [backgroundImage, setBackgroundImage] = useState('');
 
     function searchMovie() {
-        navigate(`search/${search}`)
+        navigate(`search/multi?query=${search}`)
     }
 
     function importAll(r) {
